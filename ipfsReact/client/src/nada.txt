@@ -1,0 +1,48 @@
+return (
+			<div className="App">
+				<div className="container pt-3">
+          <h1>Paciente</h1>
+					<StyledDropZone onDrop={this.add} />
+          <h1>Médico</h1>
+					<Table>
+						<thead>
+							<tr>
+								<th width="7%" scope="row">
+									Tipo
+								</th>
+								<th className="text-left">Nome do Arquivo</th>
+								<th className="text-right">Data</th>
+							</tr>
+						</thead>
+						<tbody>
+							{solidityDrive !== []
+								? solidityDrive.map((item, key) => (
+										<tr>
+											<th>
+												<FileIcon
+													size={30}
+													extension={item[2]}
+													{...defaultStyles[item[2]]}
+												/>
+											</th>
+											<th className="text-left">
+												<a rel="noopener noreferrer" href={'https://ipfs.io/ipfs/' + item[0]}>
+													{item[1]}
+												</a>
+											</th>
+											<th className="text-right">
+												<Moment format="DD/MM/YYYY" unix>
+													{item[3]}
+												</Moment>
+											</th>
+										</tr>
+								  ))
+								: null}
+						</tbody>
+					</Table>
+				</div>
+			</div>
+		);
+
+
+        <a rel="noopener noreferrer" href={'https://ipfs.io/ipfs/' + }>abc</a>
