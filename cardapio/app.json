@@ -1,0 +1,12 @@
+{
+  "name": "cardapio",
+  "displayName": "cardapio",
+  "expo": {
+    "name": "cardapio",
+    "slug": "cardapio",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
