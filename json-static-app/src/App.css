@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+body {
+  margin: 0;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+}
+
+.posts {
+  text-align: left;
+}
+
+.post {
+  border-bottom: 1px solid #000;
+}
